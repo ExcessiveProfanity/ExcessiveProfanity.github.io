@@ -13,11 +13,16 @@
 </head>
 <body>
 <h1>Privacy Policy</h1>
-<p><strong>ExcessiveProfanity VOD Uploader</strong> · Effective 29 October 2026</p>
+<p><strong>ExcessiveProfanity VOD Uploader</strong> · Effective 29 October 2026 (updated 29 October 2026)</p>
 
 <h2>Who uses this tool</h2>
 <p>This tool is used only by the owner of the ExcessiveProfanity YouTube channel, to upload their own videos to their own
 channel. It is not offered to the public, and no one else can sign in to it.</p>
+
+<h2>YouTube API Services</h2>
+<p>This tool uses the <strong>YouTube API Services</strong>. By using it, you agree to be bound by the
+<a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a>. Google's handling of data is described in the
+<a href="http://www.google.com/policies/privacy"><strong>Google Privacy Policy</strong></a>.</p>
 
 <h2>What Google data it uses</h2>
 <p>With the channel owner's permission, the tool uses the YouTube Data API to:</p>
@@ -31,15 +36,27 @@ channel. It is not offered to the public, and no one else can sign in to it.</p>
 
 <h2>Storage</h2>
 <p>The sign-in token Google provides is stored only on the channel owner's own computer, so uploads can run on a
-schedule. Nothing is sent to any server other than Google's.</p>
+schedule. The only YouTube data the tool keeps is the IDs of the videos and playlist entries it created, so it never
+uploads the same video twice. Nothing is sent to any server other than Google's. The tool uses no cookies.</p>
+
+<h2>Data retention and deletion</h2>
+<ul>
+  <li>Revoking access (below) or running the tool's revoke command (<code>youtube-revoke</code>) deletes the stored
+  sign-in token immediately.</li>
+  <li>The stored video and playlist IDs are deleted within 30 days of access being revoked, or sooner on request.</li>
+  <li>To request deletion of any data, contact ExcessiveProfanity (see Contact below). Requests are handled within
+  7 days.</li>
+</ul>
 
 <h2>Sharing</h2>
 <p>No data is sold, shared with or transferred to anyone.</p>
 
 <h2>Revoking access</h2>
-<p>The channel owner can revoke the tool's access at any time from
-<a href="https://myaccount.google.com/permissions">Google Account → Security → Third-party connections</a>.
-Revoking access stops all uploads.</p>
+<p>The channel owner can revoke the tool's access at any time, either from within the tool
+(<code>youtube-revoke</code>, which calls Google's OAuth revocation endpoint) or from the
+<a href="https://myaccount.google.com/connections">Google security settings page</a>
+(Google Account → Security → Your connections to third-party apps &amp; services). Revoking access stops all
+uploads.</p>
 
 <p>The tool's use of information received from Google APIs follows the
 <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>
